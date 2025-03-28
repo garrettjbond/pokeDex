@@ -1,5 +1,6 @@
 import React from "react";
 import Avatar from "./Avatar";
+import "../generic/Card.css";
 
 function Card(props) {
   return (
@@ -9,7 +10,7 @@ function Card(props) {
         <h2 className="type">{props.type}</h2>
       </div>
       <div className="right">
-        <img className="image">{props.img}</img>
+        <Avatar className="image">{props.img}</Avatar>
       </div>
     </div>
   );

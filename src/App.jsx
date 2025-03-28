@@ -1,37 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import React from 'react';
+// import Card from "./components/Card";
+import './App.css';
+import pokemon from './pokemon';
+
+
+function createCard(pokemonCard) {
+  return (
+    <Card
+      key={pokemonCard.id}
+      name={pokemonCard.name}
+      type={pokemonCard.type}
+      img={pokemonCard.imgURL}
+      />
+  );
+}
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-    {/* Can you see me? - Garrett */}
-    {/* {Yes I can. } */}
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1 className='heading'>PokeDex</h1>
+         {/* {pokemon.map(createCard)}  */}
+         {/* <Card
+         name={pokemon[0].name}
+         type={pokemon[0].type}
+         img={pokemon[0].imgURL} 
+         />
+          <Card
+         name={pokemon[1].name}
+         type={pokemon[1].type}
+         img={pokemon[1].imgURL}
+          />
+          <Card
+         name={pokemon[2].name}
+         type={pokemon[2].type}
+         img={pokemon[2].imgURL}
+          />  */}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  );
 }
 
 export default App

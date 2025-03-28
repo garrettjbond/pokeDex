@@ -3,22 +3,45 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+} 
+
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #dfe6e9;
+  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.heading {
+  text-align: center;
+  font-size: 2em;
+  color: #2d3436;
+  margin: 20px 0 30px;
 }
 
-@keyframes logo-spin {
+.card {
+  border-radius: 25px;
+  position: relative;
+  padding: 25px 15px;
+  background-color: #81ecec;
+  margin: 50px 0;
+  height: 200px;
+  box-shadow: 0 2px 5px #ccc;
+  text-align: left;
+}
+
+.pokemon-img {
+  width: 120px;
+  height: 120px;
+}
+
+.info {
+  margin: 20px 0;
+  color: #1a7e76;
+}
+
+/* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -31,12 +54,5 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
+} */
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

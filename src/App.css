@@ -1,8 +1,26 @@
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: nowrap;
+  box-shadow: none;
+  border: none;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #dfe6e9;
+}
+
 .heading {
-  text-align: center;
   font-size: 2em;
   color: #2d3436;
   margin: 20px 0 30px;
+}
+
+.filter {
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .gallery {

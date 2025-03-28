@@ -5,12 +5,13 @@ import "../generic/Card.css";
 function Card(props) {
   return (
     <div className="card">
-      <div className="left">
+      <div className="text-container">
         <h2 className="name">{props.name}</h2>
         <h2 className="type">{props.type}</h2>
       </div>
-      <div className="right">
-        <Avatar className="image">{props.img}</Avatar>
+      <div className="image-container">
+        <img className="type-image" src={props.typeImg} alt={`${props.typeImg}-image`}/>
+        <Avatar className="avatar-image" img={props.img} alt={`${props.img}-image`}/>
       </div>
     </div>
   );

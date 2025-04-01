@@ -4,7 +4,7 @@ import '../generic/Avatar.css';
 function Avatar(props) {
   return (
     <div>
-      <img className="pokemon-img" src={props.img} alt="avatar_img"/>
+      <img className="avatar-image" src={props.img} alt="avatar_img"/>
     </div>
   );
 }

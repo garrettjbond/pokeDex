@@ -1,32 +1,21 @@
-import { useState } from 'react';
 import React from 'react';
-import Card from "./components/generic/Card";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PokeGallery from "./pages/PokeGallery";
+import PokeStats from "./pages/PokeStats";
+import PokeError from "./pages/PokeError";
 import './App.css';
-import pokemon from './pokemon';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilter } from '@fortawesome/free-solid-svg-icons';  
 
 
 function App() {
   return (
-      <div>
-        <div className='pageHeader'>
-          <h1 className='heading'>PokeDex</h1>
-           <FontAwesomeIcon icon={faFilter} className='filter'/>
-        </div>
-        <div className='gallery'>
-          {pokemon.map((i) => (
-            <Card
-              key={i.id}
-              name={i.name}
-              type={i.type}
-              typeImg={i.imgURL1}
-              img={i.imgURL2} 
-              />
-              ))}
-         </div>
-      </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<PokeGallery />} />
+        <Route path="/pokeStats" element={<PokeStats />} />
+        <Route path="*" element={<PokeError />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default App
+export default App;

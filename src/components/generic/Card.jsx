@@ -11,7 +11,7 @@ function Card(props) {
       </div>
       <div className="image-container">
         <img className="type-image" src={props.typeImg} alt={`${props.typeImg}-image`}/>
-        <Avatar className="avatar-image" img={props.img} alt={`${props.img}-image`}/>
+        <Avatar img={props.img} alt={`${props.img}-image`}/>
       </div>
     </div>
   );

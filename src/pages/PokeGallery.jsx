@@ -18,10 +18,12 @@ function PokeGallery() {
           {pokemon.map((i) => (
             <Card
               key={i.id}
-              name={i.name}
-              type={i.type}
-              typeImg={i.imgURL1}
+              pokeBallImg={i.imgURL1}
               img={i.imgURL2} 
+              name={i.name}
+              registry={i.registryNumber}
+              type1={i.type1}
+              type2={i.type2}
               />
               ))}
          </div>

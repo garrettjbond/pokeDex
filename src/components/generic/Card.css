@@ -1,47 +1,57 @@
 .card {
     display: flex;
+    flex-direction: column; 
+    justify-content: flex-end; 
     margin: 0;
-    padding: 25px 15px;
+    padding: 15px 5px;
     border-radius: 20px;
-    height: 6rem;
+    height: 10rem;
     background-color: #2c2c2c;
     color: white;
     box-shadow: 0 2px 5px #ccc;
-    text-align: left;
-    justify-content: space-between;
-    overflow: hidden;
-    z-index: 0;
-    align-items: center;
-  }
-
-  .text-container {
-    flex: 1;
-    z-index: 0;
-  }
-
-      .name {
-        font-size: .7rem;
-        z-index: 0;
-      }
-
-      .type {
-        font-size: .6rem;
-        z-index: 0;
-      }
-
-  .image-container {
     position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 0;
   }
 
-      .type-image {
-        height: 90%;
-        width: 90%;
-        z-index: 1;
-        border-radius: 50%;
+      .image-container {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
       }
+
+        .pokeball-image {
+            position: absolute;
+            object-fit: cover;
+            height: 110px;
+            width: 110px;
+            opacity: .5;
+            z-index: 0;
+            border-radius: 50%;
+              } 
     
+      .card-content {
+        position: relative;
+        z-index: 1;
+      }
+
+          .name {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+          }
+          
+          .registryNumber {
+            font-size: .8rem;
+            font-weight: bold;
+            margin-bottom: .5rem;
+          }
+
+.card:hover {
+  box-shadow: 0 0 15px #2c2c2c;
+  cursor: pointer;
+}
+  

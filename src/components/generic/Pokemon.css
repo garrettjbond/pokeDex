@@ -1,0 +1,12 @@
+  .pokemon-image {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+    z-index: 1;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }

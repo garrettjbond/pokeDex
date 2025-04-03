@@ -1,0 +1,90 @@
+.type-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.type {
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: .85rem;
+}
+
+:root {
+    --type-grass: #4caf50;
+    --type-fire: #F08030;
+    --type-water: #6890F0;
+    --type-normal: #a8a878; 
+    --type-electric: #F8D030; 
+    --type-ice: #98d8d9 ; 
+    --type-fighting: #C03028; 
+    --type-poison: #A040A0; 
+    --type-ground: #E0c068; 
+    --type-flying: #a890f0;  
+    --type-psychic: #F85888;
+    --type-bug: #A8B820; 
+    --type-rock: #B8A038; 
+    --type-ghost: #705898; 
+    --type-dragon: #7038F8;  
+    --type-dark: #705848;
+    --type-steel: #B8B8D0; 
+    --type-fairy: #EE99AC; 
+  }
+
+  .type[data-type="Grass"] {
+    background-color: var(--type-grass);
+  }
+  .type[data-type="Fire"] {
+    background-color: var(--type-fire);
+  }
+  .type[data-type="Water"] {
+    background-color: var(--type-water);
+  }
+  .type[data-type="Normal"] {
+    background-color: var(--type-normal);
+  }
+  .type[data-type="Electric"] {
+    background-color: var(--type-electric);
+  }
+  .type[data-type="Ice"] {
+    background-color: var(--type-ice);
+  }
+  .type[data-type="Fighting"] {
+    background-color: var(--type-fighting);
+  }
+  .type[data-type="Poison"] {
+    background-color: var(--type-poison);
+  }
+  .type[data-type="Ground"] {
+    background-color: var(--type-ground);
+  }
+  .type[data-type="Flying"] {
+    background-color: var(--type-flying);
+  }
+  .type[data-type="Psychic"] {
+    background-color: var(--type-psychic);
+  }
+  .type[data-type="Bug"] {
+    background-color: var(--type-bug);
+  }
+  .type[data-type="Rock"] {
+    background-color: var(--type-rock);
+  }
+  .type[data-type="Ghost"] {
+    background-color: var(--type-ghost);
+  }
+  .type[data-type="Dragon"] {
+    background-color: var(--type-dragon);
+  }
+  .type[data-type="Dark"] {
+    background-color: var(--type-dark);
+  }
+  .type[data-type="Steel"] {
+    background-color: var(--type-steel);
+  }
+  .type[data-type="Fairy"] {
+    background-color: var(--type-fairy);
+  }
+

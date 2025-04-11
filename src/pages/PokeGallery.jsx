@@ -48,7 +48,7 @@ function PokeGallery() {
   
       setPokemonData(newPokemonData);
       setIsLoading(false);
-      console.log(newPokemonData); // Log the fresh data instead of potentially stale state
+      console.log(newPokemonData);
     };
   
     fetchPokemonByGen(selectedGen);

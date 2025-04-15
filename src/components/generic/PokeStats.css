@@ -1,0 +1,116 @@
+body {
+    color: white;
+}
+
+.arrow-icon {
+    width: 1em;
+    height: 1em;
+    fill: black;
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+    padding: 10px;
+}
+
+.pokeStats-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    padding: 10px 0px 0px 10px;
+}
+
+.pokeStats-header2 {
+    display: flex;
+    padding: 0px 0px 10px 10px;
+}
+
+.pokeStats-images {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.pokeStats-backdrop {
+    background-color: #2c2c2c;
+}
+
+.pokeStats-navBar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.about-paragraph {
+    color: white;
+    padding: 10px 0px 10px 10px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.about-grid > div {
+    background-color: #333;
+    text-align: start;
+    padding-left: 10px;
+}
+
+.line1 {
+    color: white;
+}
+
+.line2 {
+    color: grey;
+}
+
+.pokeStats-baseStats {
+    padding-left: 20px;
+}
+
+
+.baseStats-hp {
+    display: flex;
+}
+
+.baseStats-attack {
+    display: flex;
+}
+
+.baseStats-defense {
+    display: flex;
+}
+
+.baseStats-speed {
+    display: flex;
+}
+
+.baseStats-specialAttack {
+    display: flex;
+}
+
+.baseStats-specialDefense {
+    display: flex;
+}
+
+.pokeStats-evolutions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.pokeStats-moves {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}

@@ -5,13 +5,12 @@ import PokeStats from "./pages/PokeStats";
 import PokeError from "./pages/PokeError";
 import './App.css';
 
-
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<PokeGallery />} />
-        <Route path="/pokeStats" element={<PokeStats />} />
+        <Route path="/pokemon/:id" element={<PokeStats />} /> 
         <Route path="*" element={<PokeError />} />
       </Routes>
     </Router>

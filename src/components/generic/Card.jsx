@@ -2,8 +2,24 @@ import React from "react";
 import Pokemon from "./Pokemon";
 import Type from "./Type";
 import "../generic/Card.css";
+import { useNavigate } from "react-router-dom";
 
 function Card(props) {
+  const navigate = useNavigate();
+    
+  const handleCardClick = () => {
+    navigate("/pokemon/" + props.registry, {
+      state: {
+        name: props.name,
+        type1: props.type1,
+        type2: props.type2,
+        img: props.img,
+        pokeBallImg: props.pokeBallImg,
+        registry: props.registry
+      }
+    });
+  };
+
   const getCardBackground = () => {
     const { type1, type2 } = props;
 
@@ -34,7 +50,7 @@ function Card(props) {
   };
 
   return (
-    <div className="card" style={{background: getCardBackground() }}>
+    <div className="card" onClick={handleCardClick} style={{background: getCardBackground() }}>
         <div className="image-container">
           <img className="pokeball-image" src={props.pokeBallImg} alt={`${props.pokeBallImg}-image`}/>
           <Pokemon img={props.img} alt={`${props.img}-image`}/>
